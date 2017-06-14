@@ -30,6 +30,7 @@
       dataService.addRecipe((response) => {
         $scope.recipes.unshift(response.data);
       }, newRecipe);
+      $location.path('/add');
     }
 
 
